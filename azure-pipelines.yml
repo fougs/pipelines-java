@@ -21,8 +21,3 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-- task: NexusIqPipelineTask@1
-  inputs:
-    nexusIqService: 'NexusIQ'
-    applicationId: 'SonarQubeTest_CallumFoughaliSonarQubeTest'
-    stage: 'Build'
